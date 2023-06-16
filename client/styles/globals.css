@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+._section {
+    @apply w-full h-auto flex justify-center;
+}
+._wrapper {
+    @apply px-2 w-full max-w-[1200px]
+}
+._h{
+    @apply text-[42px] text-_blue_for-text
+}
