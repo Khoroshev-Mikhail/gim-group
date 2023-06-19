@@ -5,7 +5,7 @@ export default function Chest( { src }: { src: StaticImageData } ){
     return(
         <div className="relative aspect-[225/100] rounded-xl text-white">
             
-            <Image src={src} alt="w-full h-full" />
+            <img src={src.src} alt="w-full h-full" />
             
             <div className="absolute w-full top-[12%] left-[6%] flex">
                 <button>Сдан</button>

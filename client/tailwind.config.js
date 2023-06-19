@@ -13,13 +13,15 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
+        '_gray': '#F2F3F7',
+        '_gray-for-text': '#9FA3AD',
         '_blue_for-text': '#3597E4',
         '_blue-for-bg': '#5BC2F5',
         '_gray-light': '#CCCCCC',
         '_gray-dark': '#B3B3B3',
         '_blue-button': '#00CCFF',
         '_red-button': '#FF0000',
-        '_orange-button': 'F87700'
+        '_orange-button': 'F87700',
       }
     },
   },

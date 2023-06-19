@@ -10,7 +10,7 @@ export default function Slide_news( { date, title, text }: { date: Date, title: 
 
     const formattedDate = date.toLocaleDateString();
     return(
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-white rounded-2xl">
             <div>
                 { formattedDate }
             </div>
