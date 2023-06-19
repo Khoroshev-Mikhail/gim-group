@@ -21,7 +21,8 @@ module.exports = {
         '_gray-dark': '#B3B3B3',
         '_blue-button': '#00CCFF',
         '_red-button': '#FF0000',
-        '_orange-button': 'F87700',
+        '_orange-button': '#F87700',
+        '_gray-button': '#E9EAF2',
       }
     },
   },

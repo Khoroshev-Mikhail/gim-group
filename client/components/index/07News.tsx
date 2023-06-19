@@ -24,7 +24,7 @@ const NEWS: News[] = [
 
 export default function News(){
     return(
-        <section className="_section mt-10">
+        <section className="_section mt-20">
             <div className="_wrapper flex flex-col">
                 
                     <div className='flex justify-between'>
@@ -40,7 +40,7 @@ export default function News(){
                         </div>
                     </div>
 
-                    <div className='w-full'>
+                    <div className='w-full mt-7'>
                         <Swiper
                             id='SLIDER'
                             modules={[ Navigation ]}

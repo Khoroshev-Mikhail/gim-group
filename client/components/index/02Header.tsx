@@ -3,7 +3,7 @@ import bg from '../../public/images/bg.webp'
 
 export default function Header(){
     return(
-        <section className="_section mt-5">
+        <section className="_section mt-4">
             <div className="_wrapper">
                 <div className="relative text-white">
                     <Image src={bg} alt="Два дома в Ессентуках" className="w-full h-auto"/>

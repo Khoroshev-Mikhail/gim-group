@@ -15,3 +15,7 @@ html{
 ._h{
     @apply text-[42px] text-_blue_for-text
 }
+._main-bg{
+    @apply bg-[url('/images/bg.webp')] bg-cover bg-bottom;
+    background-size: 120%;
+}

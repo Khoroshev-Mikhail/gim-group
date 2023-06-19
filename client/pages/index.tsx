@@ -9,12 +9,13 @@ import Feedback from '@/components/index/06Feedback'
 import News from '@/components/index/07News'
 import About from '@/components/index/08About'
 import Footer from '@/components/index/09Footer'
+import { MONTSERRATE } from './_app'
 
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     return (
-        <div>
+        <div className={`${MONTSERRATE}`}>
             <Nav />
             <Header />
             <Callback />

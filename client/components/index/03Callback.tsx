@@ -6,7 +6,7 @@ export default function Callback(){
     }
 
     return(
-        <section className="_section mt-16">
+        <section className="_section mt-14">
             <div className="_wrapper">
                 <div className="">
                     <form onSubmit={formHandler} className="flex justify-between gap-x-8">

@@ -1,12 +1,12 @@
 
 export default function Variants(){
     return(
-        <section className="_section mt-16">
+        <section className="_section mt-20">
             <div className="_wrapper flex flex-col">
                 
                 <h2 className="_h">Варианты покупки</h2>
 
-                <div className="flex justify-between gap-x-5 mt-5">
+                <div className="flex justify-between gap-x-5 mt-7">
 
                     <div className="flex flex-col gap-y-5 rounded-2xl bg-white w-3/5 px-8 py-5"> 
                         

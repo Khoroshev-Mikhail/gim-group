@@ -7,7 +7,7 @@ export default function Feedback(){
 
     return(
         <section className="_section mt-20">
-            <div className="_wrapper bg-[url('/images/bg.webp')] bg-cover bg-center rounded-2xl">
+            <div className="_wrapper rounded-2xl _main-bg">
                 <div className="flex justify-between h-full p-20">
 
                     <div className="flex flex-col justify-center h-full text-white">

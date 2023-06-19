@@ -9,7 +9,7 @@ export default function Projects(){
                 
                 <h2 className="_h">Проекты</h2>
 
-                <div className="grid grid-cols-2 gap-x-5 gap-y-5 mt-5">
+                <div className="grid grid-cols-2 gap-x-5 gap-y-5 mt-7">
                     <Chest src={chest2} />
                     <Chest src={chest2} />
                     <Chest src={chest2} />
