@@ -13,12 +13,12 @@ export default function Chest( { src }: { src: StaticImageData } ){
                 <div className="px-3 py-1 rounded-md text-[10px] font-semibold bg-_orange-button">Акция</div>
             </div>
 
-            <div className="absolute top-[50%] left-[6%]">
+            <div className="absolute top-[35%] xs:top-[50%] left-[6%]">
                 <h3 className="w-2/3 font-semibold text-[20px] leading-[18px]">Жилой комплекс "Жемчужина"</h3>
-                <p className="text-[10px] mt-1">г.Владимир, ул.Чайковского, д.8</p>
+                <p className="text-[10px] xs:mt-1">г.Владимир, ул.Чайковского, д.8</p>
             </div>
 
-            <p className="absolute bottom-[12%] left-[6%] font-semibold text-[20px]">от 2 790 000 руб.</p>
+            <p className="absolute bottom-[3%] xs:bottom-[12%] left-[6%] font-semibold text-[20px]">от 2 790 000 руб.</p>
 
         </div>
     )

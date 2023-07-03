@@ -44,15 +44,17 @@ export default function News(){
                             id='SLIDER'
                             modules={[ Navigation ]}
                             spaceBetween={ 20 }
-                            slidesPerView={ 3 } 
-                            // breakpoints={{
-                            //     640: {
-                            //         slidesPerView: 2,
-                            //     },
-                            //     1000: {
-                            //         slidesPerView: 3,
-                            //     },
-                            // }}
+                            breakpoints={{
+                                0: {
+                                    slidesPerView: 1
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                },
+                                1000: {
+                                    slidesPerView: 3,
+                                },
+                            }}
                             navigation={{ prevEl: '_PREV', nextEl: '_NEXT' }}
                         >
                                 {NEWS.map((el, i) => {
