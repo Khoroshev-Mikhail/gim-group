@@ -6,7 +6,10 @@ export default function Variants(){
     const [ initial, setInitial ] = useState<number>(400_000)
     const [ years, setYears ] = useState<number>(15)
     const [ rate, setRate ] = useState<number>(0.001)
-    const formattedPrice = price.toLocaleString()
+
+    const formatedPrice = Math.ceil( (rate * ( price - initial) * years + price - initial) / years / 12 )
+    const formatedOverRate = Math.ceil(rate * ( price - initial) * years)
+
     return(
         <section className="_section mt-20">
             <div className="_wrapper flex flex-col">
@@ -67,11 +70,11 @@ export default function Variants(){
                                 </div>
                                 <div className="">
                                     <p className="text-_gray-for-text">Ежемесячный платеж</p>
-                                    <p className="text-_blue_for-text text-[32px] font-semibold">{ Math.ceil( (rate * ( price - initial) * years + price) / years / 12 ).toLocaleString() } руб.</p>
+                                    <p className="text-_blue_for-text text-[32px] font-semibold">{ formatedPrice > 0 ? formatedPrice.toLocaleString() : 0 } руб.</p>
                                 </div>
                                 <div className="">
                                     <p className="text-_gray-for-text">Переплата</p>
-                                    <p className="text-_blue_for-text text-[28px] font-medium">{ Math.ceil(rate * ( price - initial) * years).toLocaleString() } руб.</p>
+                                    <p className="text-_blue_for-text text-[28px] font-medium">{ formatedOverRate > 0 ? formatedOverRate.toLocaleString() : 0} руб.</p>
                                 </div>
                             </div>
 
