@@ -53,7 +53,7 @@ export default function News(){
                             //         slidesPerView: 3,
                             //     },
                             // }}
-                            navigation={{ nextEl: '_NEXT', prevEl: '_PREV' }}
+                            navigation={{ prevEl: '_PREV', nextEl: '_NEXT' }}
                         >
                                 {NEWS.map((el, i) => {
                                     return (
@@ -62,8 +62,6 @@ export default function News(){
                                         </SwiperSlide>
                                     )
                                 })}
-                                
-                            
                         </Swiper>
                     </div>
                 </div>

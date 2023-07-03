@@ -4,7 +4,7 @@ import logo_footer from '../../public/images/logo_footer.png'
 
 export default function Footer(){
     return(
-        <section className="_section mt-14">
+        <section className="_section mt-14 pb-14">
             <div className="_wrapper flex justify-between">
                 
                 <div className='w-3/12'>
