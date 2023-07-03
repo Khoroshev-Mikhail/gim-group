@@ -12,6 +12,7 @@ function truncateString(str: string) {
 export default function Slide_news( { date, title, text }: { date: Date, title: string, text: string} ){
 
     const formattedDate = date.toLocaleDateString();
+    
     return(
         <div className="flex flex-col bg-white rounded-2xl p-5 text-left">
             <div className=" text-_gray-for-text text-[10px]">

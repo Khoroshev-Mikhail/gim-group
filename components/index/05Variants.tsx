@@ -16,7 +16,7 @@ export default function Variants(){
                 
                 <h2 className="_h">Варианты покупки</h2>
 
-                <div className="flex justify-between gap-x-5 mt-7">
+                <div className="flex flex-col justify-between gap-x-5 mt-7">
 
                     <div className="flex flex-col gap-y-5 rounded-2xl bg-white w-3/5 px-8 py-5"> 
                         
@@ -54,7 +54,7 @@ export default function Variants(){
                                     <input type="range" value={ years } onChange={ (e) => setYears( Number(e.target.value) )} min={1} max={ MAX_YEARS } className="w-[calc(100%-12px)] mx-auto block h-[1px]" />
                                 </div>
                                 <div>
-                                    <button className="bg-_blue-button w-full rounded-lg p-3">
+                                    <button className="bg-_blue-button w-full rounded-lg p-3 mt-3">
                                         Получить одобрение онлайн
                                     </button>
                                 </div>
