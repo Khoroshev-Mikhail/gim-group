@@ -43,7 +43,7 @@ export default function News(){
                         <Swiper
                             id='SLIDER'
                             modules={[ Navigation ]}
-                            spaceBetween={ 10 }
+                            spaceBetween={ 20 }
                             slidesPerView={ 3 } 
                             // breakpoints={{
                             //     640: {

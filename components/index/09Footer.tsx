@@ -7,13 +7,13 @@ export default function Footer(){
         <section className="_section mt-14 pb-14">
             <div className="_wrapper flex justify-between">
                 
-                <div className='w-3/12'>
+                <div className='w-3/12 -mt-[18px]'>
                     <Image src={logo_footer} alt="ГИМ ГРУПП Логотип" />
                 </div>
 
                 <div>
                     <nav>
-                        <ul className='columns-2'>
+                        <ul className='columns-2 text-[12px]'>
                             <li>Проекты</li>
                             <li>Коммерческая недвижимость</li>
                             <li>Машиноместа</li>
@@ -25,8 +25,8 @@ export default function Footer(){
                 </div>
 
                 <div className='flex flex-col justify-start'>
-                    <a href="tel:74922779554" className="text-right leading-4">+7 (4922) 779-554</a>
-                    <p className="text-_gray-dark leading-4">пн-пт:9:00-18:00, сб-вс:выходной</p>
+                    <a href="tel:74922779554" className="text-right text-[36px] leading-tight">+7 (4922) 779-554</a>
+                    <p className="text-_gray-dark text-right leading-4">пн-пт:9:00-18:00, сб-вс:выходной</p>
                 </div>
 
             </div>
