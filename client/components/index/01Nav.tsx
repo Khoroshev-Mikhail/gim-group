@@ -7,7 +7,7 @@ export default function Nav(){
         <section className="_section mt-7">
             <div className="_wrapper">
 
-                <div className="flex justify-between text-_blue_for-text h-16 bg-white rounded-2xl px-10">
+                <div className="flex justify-between text-_blue_for-text h-16 text-[14px] bg-white rounded-2xl px-10">
                     {/* <Image src={burger} alt="Меню" className="block"/> */}
                     
                     <div className="flex flex-col justify-center ">
@@ -16,9 +16,9 @@ export default function Nav(){
 
                     <nav className="flex flex-col justify-center">
                         <ul className="flex [&>li]:inline gap-x-10">
-                            <li>Проекты</li>
-                            <li>Коммерческая недвижимость</li>
-                            <li>Машиноместа</li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Коммерческая недвижимость</a></li>
+                            <li><a href="#">Машиноместа</a></li>
                         </ul>
                     </nav>
 
