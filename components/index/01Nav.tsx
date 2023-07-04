@@ -34,7 +34,7 @@ export default function Nav(){
                 </div>
 
                 {isVisible &&
-                    <div className="absolute z-50 flex flex-col justify-between px-12 py-[18px] bg-white min-h-screen h-full w-full top-0 left-0">
+                    <div className="absolute z-50 top-0 left-0 flex flex-col justify-between px-12 py-[18px] bg-white min-h-screen rounded-2xl h-full w-full">
                         <div className="flex justify-between">
                             <Image src={logo_top}  alt="ГИМ ГРУПП" height={20} className="w-auto block"/>
                             <Image src={burger} alt="Меню" className="" onClick={()=>setIsVisible(false)}/>

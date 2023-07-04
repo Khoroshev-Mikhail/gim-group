@@ -33,7 +33,7 @@ export default function News(){
                             <button id="_PREV" className='flex flex-col justify-center'>
                                 <img src={arrow_left.src} alt="←" />
                             </button>
-                            <button id="_NEXT" className='flex flex-col justify-center ml-20'>
+                            <button id="_NEXT" className='flex flex-col justify-center ml-10 xs:ml-20'>
                                 <img src={arrow_right.src} alt="→" />
                             </button>
                         </div>

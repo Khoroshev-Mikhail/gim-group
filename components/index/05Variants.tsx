@@ -27,7 +27,20 @@ export default function Variants(){
                         <div className="flex">
 
                             <div className="flex flex-col w-3/5 justify-between gap-y-5 pr-5 text-[10px] border-r border-_gray">
-                                <div className="flex justify-between gap-x-3">
+                                <div>
+                                    <select className="w-full bg-_gray p-3 rounded-xl lg:hidden">
+                                        <option className="">
+                                            Ипотека 0.1%
+                                        </option>
+                                        <option>
+                                            Семейная ипотека
+                                        </option>
+                                        <option>
+                                            IT специалистам
+                                        </option>
+                                    </select>
+                                </div>
+                                <div className="hidden lg:flex justify-between gap-x-3">
                                     <button className="p-3 bg-_gray rounded-xl">
                                         Ипотека 0.1%
                                     </button>
@@ -41,7 +54,7 @@ export default function Variants(){
                                 <div>
                                     <label className="text-_gray-for-text">Стоимость квартиры</label>
                                     <input type="number" value={ price } onChange={ (e) => setPrice( Number(e.target.value) )} placeholder="" className="w-full rounded-lg bg-_gray p-3"/>
-                                    <input type="range" value={ price } min={0} max={ MAX_PRICE } onChange={ (e) => setPrice( Number(e.target.value) )} className="w-[calc(100%-12px)] mx-auto block h-[1px]" />
+                                    <input type="range" value={ price } min={initial} max={ MAX_PRICE } onChange={ (e) => setPrice( Number(e.target.value) )} className="w-[calc(100%-12px)] mx-auto block h-[1px]" />
                                 </div>
                                 <div>
                                     <label className="text-_gray-for-text">Первоначальный взнос</label>
@@ -61,20 +74,20 @@ export default function Variants(){
                             </div>
 
                             <div className="flex flex-col w-2/5 justify-between pl-5">
-                                <div className="text-[28px] leading-none font-medium pt-1">
+                                <div className="text-[14px] sm:text-[16px] md:text-[28px] leading-none font-medium pt-1">
                                     Ипотека { rate * 100 }%
                                 </div>
                                 <div className="">
-                                    <p className="text-_gray-for-text">Процентная ставка</p>
-                                    <p className="text-_blue_for-text text-[32px] font-semibold">{ rate * 100 }%</p>
+                                    <p className="text-_gray-for-text text-[14px] sm:text-[16px]">Процентная ставка</p>
+                                    <p className="text-_blue_for-text text-[16px] xs:text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] font-semibold">{ rate * 100 }%</p>
                                 </div>
                                 <div className="">
-                                    <p className="text-_gray-for-text">Ежемесячный платеж</p>
-                                    <p className="text-_blue_for-text text-[32px] font-semibold">{ formatedPrice > 0 ? formatedPrice.toLocaleString() : 0 } руб.</p>
+                                    <p className="text-_gray-for-text text-[14px] sm:text-[16px]">Ежемесячный платеж</p>
+                                    <p className="text-_blue_for-text text-[16px] xs:text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] font-semibold">{ formatedPrice > 0 ? formatedPrice.toLocaleString() : 0 } руб.</p>
                                 </div>
                                 <div className="">
-                                    <p className="text-_gray-for-text">Переплата</p>
-                                    <p className="text-_blue_for-text text-[28px] font-medium">{ formatedOverRate > 0 ? formatedOverRate.toLocaleString() : 0} руб.</p>
+                                    <p className="text-_gray-for-text text-[14px] sm:text-[16px]">Переплата</p>
+                                    <p className="text-_blue_for-text text-[14px] xs:text-[16px] sm:text-[18px] md:text-[22px] lg:text-[28px] font-medium">{ formatedOverRate > 0 ? formatedOverRate.toLocaleString() : 0} руб.</p>
                                 </div>
                             </div>
 

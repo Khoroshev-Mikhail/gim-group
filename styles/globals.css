@@ -16,8 +16,11 @@ html{
     @apply text-[42px] text-_blue_for-text
 }
 ._main-bg{
-    @apply bg-[url('/images/bg.webp')] bg-cover bg-bottom;
+    @apply bg-[url('/images/bg.webp')] bg-contain bg-center bg-no-repeat;
     background-size: 120%;
+}
+._h2-text{
+    @apply text-[24px] md:text-[28px]
 }
 .range {
     -webkit-appearance: none;
