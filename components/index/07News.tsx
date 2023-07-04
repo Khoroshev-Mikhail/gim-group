@@ -1,6 +1,6 @@
-import { Navigation } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Slide_news from './07News/Slide_news';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -30,10 +30,10 @@ export default function News(){
                     <div className='flex justify-between'>
                         <h3 className='_h block'>Новости</h3>
                         <div className='flex'>
-                            <button id="_PREV" className='flex flex-col justify-center'>
+                            <button id="_PREV_BUTTON" className='flex flex-col justify-center'>
                                 <img src={arrow_left.src} alt="←" />
                             </button>
-                            <button id="_NEXT" className='flex flex-col justify-center ml-10 xs:ml-20'>
+                            <button id="_NEXT_BUTTON" className='flex flex-col justify-center ml-10 xs:ml-20'>
                                 <img src={arrow_right.src} alt="→" />
                             </button>
                         </div>
@@ -55,7 +55,7 @@ export default function News(){
                                     slidesPerView: 3,
                                 },
                             }}
-                            navigation={{ prevEl: '_PREV', nextEl: '_NEXT' }}
+                            navigation={{ prevEl: '#_PREV_BUTTON', nextEl: '#_NEXT_BUTTON' }}
                         >
                                 {NEWS.map((el, i) => {
                                     return (

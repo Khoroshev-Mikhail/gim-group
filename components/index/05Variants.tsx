@@ -28,14 +28,14 @@ export default function Variants(){
 
                             <div className="flex flex-col w-3/5 justify-between gap-y-5 pr-5 text-[10px] border-r border-_gray">
                                 <div>
-                                    <select className="w-full bg-_gray p-3 rounded-xl lg:hidden">
-                                        <option className="">
+                                    <select value={ rate } onChange={(e) => setRate( Number(e.target.value) )} className="w-full bg-_gray p-3 rounded-xl lg:hidden">
+                                        <option value={0.001}>
                                             Ипотека 0.1%
                                         </option>
-                                        <option>
+                                        <option value={0.064}>
                                             Семейная ипотека
                                         </option>
-                                        <option>
+                                        <option value={0.051}>
                                             IT специалистам
                                         </option>
                                     </select>
@@ -95,19 +95,17 @@ export default function Variants(){
                         
                     </div>
                     
-                    <div className="flex flex-col justify-between rounded-2xl bg-[#157BBC] text-white w-full md:w-2/5  px-8 py-5">
-
+                    <div className="flex flex-col justify-between rounded-2xl bg-[#157BBC] gap-y-2 xs:gap-y-4 sm:gap-y-6 text-white w-full md:w-2/5  px-8 py-5">
                         <div>
                             <p>Рассрочка</p>
                         </div>
                         <div>
-                            <p>С действующей программой гибкой рассрочки...</p>
+                            <p>С действующей программой гибкой рассрочки от застройщика вы можете купить готовую, новую квартиру не дожидаясь продажи старой. А остаток погасить, например, через целый год. Это отличное решение для тех, кому не подходит ипотека, а для полной оплаты возможности нет.</p>
                         </div>
                         <div>
                             <a className="underline">Подробнее</a>
                         </div>
                     </div>
-
                 </div>
                 
             </div>

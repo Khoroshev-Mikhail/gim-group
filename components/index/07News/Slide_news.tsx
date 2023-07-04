@@ -25,7 +25,7 @@ export default function Slide_news( { date, title, text }: { date: Date, title: 
                 <p className="block w-10/12 text-_gray-for-text text-[10px]">
                     { truncateString(text) }
                 </p>
-                <button className="flex flex-col justify-center w-2/12 max-w-[50px]">
+                <button className="ml-auto flex flex-col justify-center w-2/12 max-w-[50px]">
                     <div className='flex flex-col justify-center w-full aspect-square bg-_gray-button rounded-2xl'>
                         <Image src={arrow_right_white} alt=">" width={14} height={14} className='mx-auto'/>
                     </div>
