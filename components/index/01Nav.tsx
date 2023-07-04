@@ -1,5 +1,6 @@
 import Image from "next/image";
 import burger from '../../public/images/burger.svg'
+import xmark from '../../public/images/xmark.svg'
 import logo_top from '../../public/images/logo_top.png'
 import { useState } from "react";
 
@@ -37,7 +38,7 @@ export default function Nav(){
                     <div className="absolute z-50 top-0 left-0 flex flex-col justify-between px-12 py-[18px] bg-white min-h-screen rounded-2xl h-full w-full">
                         <div className="flex justify-between">
                             <Image src={logo_top}  alt="ГИМ ГРУПП" height={20} className="w-auto block"/>
-                            <Image src={burger} alt="Меню" className="" onClick={()=>setIsVisible(false)}/>
+                            <Image src={xmark} alt="Меню" className="" onClick={()=>setIsVisible(false)}/>
                         </div>
                         <div className="mt-4">
                             <ul className="text-right w-full space-y-2">
