@@ -67,7 +67,7 @@ export default function Variants(){
                                     <input type="range" value={ years } onChange={ (e) => setYears( Number(e.target.value) )} min={1} max={ MAX_YEARS } className="w-[calc(100%-12px)] mx-auto block h-[1px]" />
                                 </div>
                                 <div>
-                                    <button className="bg-_blue-button w-full rounded-lg p-3 mt-3">
+                                    <button className="bg-_blue-button text-white w-full rounded-lg p-3 mt-3">
                                         Получить одобрение онлайн
                                     </button>
                                 </div>
@@ -95,7 +95,7 @@ export default function Variants(){
                         
                     </div>
                     
-                    <div className="flex flex-col justify-between rounded-2xl bg-[#177ABC] text-white w-full md:w-2/5  px-8 py-5">
+                    <div className="flex flex-col justify-between rounded-2xl bg-[#157BBC] text-white w-full md:w-2/5  px-8 py-5">
 
                         <div>
                             <p>Рассрочка</p>
