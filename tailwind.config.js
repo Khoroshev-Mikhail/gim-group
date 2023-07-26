@@ -19,8 +19,11 @@ module.exports = {
       colors: {
         '_gray': '#F2F3F7',
         '_gray-for-text': '#BDBFC6',
+        '_dark-gray-for-text': '#8D90A2',
         '_blue_for-text': '#3484BB',
+        '_dark-blue_for-text': '#093963',
         '_blue-for-bg': '#61A5D6',
+        '_blue-for-icons': '#7AA7CF',
         '_gray-light': '#CCCCCC',
         '_gray-dark': '#B3B3B3',
         '_blue-button': '#008DD2',
