@@ -10,7 +10,7 @@ export default function Choose_Projects(){
                     <h2 className="block text-_blue_for-text text-[32px]">Выбор квартиры</h2>
                 </div>
 
-                <div className="grid grid-cols-3 gap-5  mt-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5  mt-10">
 
                     <div>
                         <select className="w-full py-3.5 px-3 rounded-lg">
@@ -22,7 +22,8 @@ export default function Choose_Projects(){
                             <option>Параметры квартиры</option>
                         </select>
                     </div>
-                    <div>
+
+                    <div className="hidden md:block">
 
                     </div>
 
@@ -36,14 +37,12 @@ export default function Choose_Projects(){
                             <input type="range" className="w-[calc(100%-12px)] mr-auto block h-[1px]"/>
                         </div>
                     </div>
-                    <div>
+                    <div className="w-full flex justify-between col-span-1 md:col-span-2">
                         <button className="flex flex-col h-full justify-center">
                             <div className="bg-white rounded-xl p-3">
                                 <span className="text-red-500 pr-1">%</span>Акция
                             </div>
                         </button>
-                    </div>
-                    <div className="w-full flex justify-end">
                         <button className="flex flex-col justify-center h-full">
                             <div>
                                 <img src="/images/clear.png" className="w-6 inline pr-1"/>
@@ -66,15 +65,16 @@ export default function Choose_Projects(){
                     </div>
                 </div>
                 
-                <div className="flex justify-between">
-                    <div>
-                        <button>1</button>
+                <div className="flex justify-between mt-10 text-_dark-blue_for-text font-bold">
+                    <div className="flex gap-x-2  ">
+                        <button className="text-_blue_for-text">1</button>
                         <button>2</button>
                         <button>3</button>
                         <button>4</button>
                         <button>5</button>
                         <button>...</button>
                         <button>11</button>
+                        <button><img src="/images/arrow_right_pagination.png" alt="" className="h-3 ml-1"/></button>
                     </div>
                     <div>
                         Показать еще
